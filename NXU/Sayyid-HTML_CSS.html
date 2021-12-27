@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width= device-width,initial-scale=1.0">
+        <title>BigDV CommunityHub</title>
+        <link rel="shortcut icon" href="images/iconBDV.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="mystylesheet.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <script src="https://use.fontawesome.com/636aca86a7.js"></script>
+        
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="#"><img src="images/logo_BigDV.png" alt=""></a>
+                <div class="navbar" id="navbar-link">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">DATACAST</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-stream" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Welcome to Our Community</h1>
+                <p>We are focusing on creating the community for data scientist. <br> Here you can learn
+                    anything from beginning of your journey as data scientist.
+                </p>
+                <a id="about" class="hero-btn" href="Sayyid_Excercise_two.html" onclick="welcome()">Visit Us To Know More</a>
+            </div>
+            <!-- JavaScript for toggle Menu -->
+        </section>
+
+        <!-- News and Update-->
+
+        <section class="newsupdate">
+            <h1>Latest News and Update</h1>
+            <p>Looking for a new thing about this community ?!</p>
+
+            <div class="row">
+                <div class="news-col">
+                    <h3>Practice Javascript</h3>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+                        there live the blind texts. Separated they live in Bookmarksgrove right at the coast of 
+                        the Semantics, a large language ocean. A small river named Duden flows by their place and 
+                        supplies it with the necessary regelialia.</p>
+                        <a class="hero-btn-secondary" href="Sayyid-Latihan-JS.html" onclick="welcome()">Visit Us To Know More</a>
+                </div>
+                <div class="news-col">
+                    <h3>Basic HTML</h3>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+                        there live the blind texts. Separated they live in Bookmarksgrove right at the coast of 
+                        the Semantics, a large language ocean. A small river named Duden flows by their place and 
+                        supplies it with the necessary regelialia</p>
+                        <a class="hero-btn-secondary" href="Sayyid-BasicHTML.html" onclick="welcome()">Visit Us To Know More</a>
+                </div>
+                <div class="news-col">
+                    <h3>Create Form with HTML and CSS</h3>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+                        there live the blind texts. Separated they live in Bookmarksgrove right at the coast of 
+                        the Semantics, a large language ocean. A small river named Duden flows by their place and 
+                        supplies it with the necessary regelialia</p>
+                    <a class="hero-btn-secondary" href="Sayyid-CreateForm.html" onclick="welcome()">Visit Us To Know More</a>
+                </div>
+            </div>
+            <br> 
+            <h1>Recent Gallery</h1>
+            <p>don't forget to see our latest picture from previous event </p>
+            <div id="banner">
+                
+                <ul>
+                    <li><img src="images/mousepad2_PSC.jpg"></li>
+                    <li><img src="images/mousepad3_PSC.jpg"></li>
+                    <li><img src="images/pixilart-drawing (1).png"></li>
+                    <li><img src="images/pixilart-drawing (2).png"></li>
+                    <li><img src="images/walpapper.png"></li>
+                    <li><img src="images/banner.png"></li>
+                </ul>
+               
+            </div>
+            <a class="hero-btn-secondary" href="Sayyid-BasicHTML.html" onclick="welcome()">Visit The Gallery</a>
+            
+        </section>
+        <section class="dev">
+            <h1>Meet Our People</h1>
+            <div class="profile">
+                <div class="block">
+                    <div class="imgBX">
+                        <img src="/images/copy1.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Someone Famous<br><span>Software Designer</span></h3>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i:1;"><a href="#"> <i class="fab fa-facebook"></i></a></li>
+                            <li style="--i:2;"><a href="#"> <i class="fab fa-instagram"></i></a></li>
+                            <li style="--i:3;"><a href="#"> <i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgBX">
+                        <img src="/images/copy2.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Someone Famous<br><span>Web Developer</span></h3>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i:1;"><a href="#"> <i class="fab fa-facebook"></i></a></li>
+                            <li style="--i:2;"><a href="#"> <i class="fab fa-instagram"></i></a></li>
+                            <li style="--i:3;"><a href="#"> <i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgBX">
+                        <img src="/images/copy3.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Someone Famous<br><span>Content Writer</span></h3>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i:1;"><a href="#"> <i class="fab fa-facebook"></i></a></li>
+                            <li style="--i:2;"><a href="#"> <i class="fab fa-instagram"></i></a></li>
+                            <li style="--i:3;"><a href="#"> <i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                   
+                </div>
+                <div class="block">
+                    <div class="imgBX">
+                        <img src="/images/copy4.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Someone Famous<br><span>Business Manager</span></h3>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i:1;"><a href="#"> <i class="fab fa-facebook"></i></a></li>
+                            <li style="--i:2;"><a href="#"> <i class="fab fa-instagram"></i></a></li>
+                            <li style="--i:3;"><a href="#"> <i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                   
+                </div>
+
+            </div>
+        </section>
+        <!-- foooter -->
+        <section>
+            <div class="footer">
+                <div class="row">
+                    <div class="footer-content">
+                        <h5>Social Media</h5>
+                        <ul>
+                            <li>
+                                <i class="fab fa-facebook"></i>
+                                <a href="">Facebook</a>
+                            </li>
+                            <li>
+                                <i class="fab fa-instagram"></i>
+                                <a href="">Instagram</a>
+                            </li>
+                            <li>
+                                <i class="fab fa-whatsapp"></i>
+                                <a href="">Whatsapp</a>
+                            </li>
+                            <li>
+                                <i class="fab fa-twitter"></i>
+                                <a href="">Twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-content">
+                        <h5>Project</h5>
+                        <ul>
+                            <li>
+                                <a href="">Latest Release</a>
+                            </li>
+                            <li>
+                                <a href="">Version 2 Beta</a>
+                            </li>
+                        </ul>
+    
+                    </div>
+                    <div class="footer-content"></div>
+                </div>
+            </div>
+        </section>
+        <script src="script.js"></script>
+
+    </body>
+</html>

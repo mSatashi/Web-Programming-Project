@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            #box1{
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                margin: 0 auto;
+                background: grey;
+                
+            }
+            #box2{
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                margin: 0 auto;
+                background: grey;
+                
+            }
+            #box3{
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                margin: 0 auto;
+                background: grey;
+                
+            }
+            .simplebox{
+                display:flex ;
+                justify-content: space-between;
+            }
+
+            #bluebox{
+                height: 100px;
+                border: 1px solid black;
+                margin: 0 auto;
+                background: blue;
+                
+            }
+            #yellowbox{
+                width: 100px;
+                border: 1px solid black;
+                margin: 0 auto;
+                background: yellow;
+                
+            }
+
+            .moving-effect{
+                align-items: center;
+                text-align: center;
+                margin: 100px auto;
+                background: rgba(4,9,30,0.7);
+                width: 1000px;
+                height: 400px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="simplebox">
+            <div id="box1" name="redbox"></div>
+            <div id="box2" name="yellowbox"></div>
+            <div id="box3" name="greenbox"></div>
+        </div>
+        <br>
+        <div class="simplebox">
+            <input onclick="displayRed()" type="button" id="red" value="turn on red">
+            <script type="text/javascript">
+                function displayRed(){
+                    document.getElementById("box1").style.background = 'red';
+                    document.getElementById("box2").style.background ='grey';
+                    document.getElementById("box3").style.background ='grey';
+            }
+            </script>
+            <input onclick="displayYellow()" type="button" id="yellow" value="turn on yellow">
+            <script type="text/javascript">
+                function displayYellow(){
+                    document.getElementById("box2").style.background ='yellow';
+                    document.getElementById("box1").style.background ='grey';
+                    document.getElementById("box3").style.background ='grey';
+                
+            }
+            </script>
+            <input onclick="displayGreen()" type="button" id="green" value="turn on green">
+            <script type="text/javascript">
+                function displayGreen(){
+                    document.getElementById("box3").style.background ='green';
+                    document.getElementById("box2").style.background ='grey';
+                    document.getElementById("box1").style.background ='grey';
+            }
+            </script>
+        </div>
+        <br>
+        <div>
+            <input  type="button" id="display" value="display text">
+            <p id="text"></p>
+            <input type="button" id="disappear" value="disappear text">
+        </div>
+
+        <script type="text/javascript">
+            document.getElementById('display').onclick = function(){
+            document.getElementById('text').innerText='Welcome to Sayyid Home page'}
+
+            document.getElementById('disappear').onclick = function(){
+            document.getElementById('text').innerText=''}
+        </script>
+
+        <div class="moving-effect">
+            <div id="textanimation" style="font-size: 12px;">Animated Text</div>
+            <div id="bluebox" style="width: 100px;"></div>
+            <div id="yellowbox" style="height: 100px;"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
